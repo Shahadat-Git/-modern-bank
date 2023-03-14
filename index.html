@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <h1
+            class="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-4xl md:text-5xl lg:text-7xl text-white font-semibold text-center py-5 uppercase rounded-lg">
+            Modern Bank</h1>
+    </header>
+    <main>
+        <div class="bg-gradient-to-r from-sky-500 to-indigo-500 my-4 pt-3 rounded-lg">
+            <h3 class="text-3xl font-medium text-white text-center">Please Login</h3>
+
+            <div class="p-6">
+                <input required id="user-email" type="email" placeholder="Your Email"
+                    class=" py-3 px-3 rounded-3xl block input input-bordered input-error w-6/12 mx-auto" />
+
+                <input required id="user-password" type="password" placeholder="Your Password"
+                    class="py-3 px-3 rounded-3xl mt-4 block input input-bordered input-error w-6/12 mx-auto" />
+                <div class="flex justify-center mt-3">
+                    <button id="login-btn" class="px-7 btn bg-transparent border-white hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:border-none text-white">Login</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4
+            class="bg-gradient-to-r from-purple-500 to-pink-500 text-1xl text-white font-semibold text-center py-5 uppercase rounded-lg">
+            © Copyright 2023
+        </h4>
+    </footer>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

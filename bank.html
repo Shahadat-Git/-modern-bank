@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <h1
+            class="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-4xl md:text-5xl lg:text-7xl text-white font-semibold text-center py-5 uppercase rounded-lg">
+            Bank Dashboard</h1>
+    </header>
+    <main>
+        <!-- display section  -->
+        <section>
+            <div class=" my-4 pt-3 w-9/12 mx-auto lg:w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="bg-gradient-to-r from-cyan-600 to-blue-200 rounded-lg p-7">
+                        <h3 class="text-white text-3xl font-medium">Deposit</h3>
+                        <h2 class="text-white font-semibold text-5xl ">$<span id="deposit-total">00</span></h2>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-violet-500 to-fuchsia-200 rounded-lg p-7">
+                        <h3 class="text-white text-3xl font-medium">Withdraw</h3>
+                        <h2 class="text-white font-semibold text-5xl ">$<span id="withdraw-total">00</span></h2>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-sky-500 to-indigo-200 rounded-lg p-7">
+                        <h3 class="text-white text-3xl font-medium">Balance</h3>
+                        <h2 class="text-white font-semibold text-5xl ">$<span id="balance-total">1240</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- input section -->
+        <section>
+            <div class=" my-4 pt-3 w-9/12 mx-auto lg:w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="bg-gradient-to-r from-teal-500 to-fuchsia-200 rounded-lg p-7">
+                        <h3 class="text-white text-2xl font-medium">Please Deposit</h3>
+                        <input id="deposit-field" type="text" placeholder="Amount you want to deposit"
+                            class="py-3 px-3 rounded-3xl mt-4 block input input-bordered input-error w-10/12 " />
+                        <button id="deposit-btn"
+                            class=" mt-2 ml-3 px-8 btn bg-transparent border-white hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:border-none text-white">Deposit</button>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-purple-600 to-indigo-100 rounded-lg p-7">
+                        <h3 class="text-white text-2xl font-medium">Please Withdraw</h3>
+                        <input id="withdraw-field" type="text" placeholder="Amount you want to withdraw"
+                            class="py-3 px-3 rounded-3xl mt-4 block input input-bordered input-error w-10/12 " />
+                        <button id="withdraw-btn"
+                            class=" mt-2 ml-3 px-8 btn bg-transparent border-white hover:bg-gradient-to-r from-cyan-600 to-blue-200 hover:border-none text-white">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4
+            class="bg-gradient-to-r from-purple-500 to-pink-500 text-1xl text-white font-semibold text-center py-5 uppercase rounded-lg">
+            © Copyright 2023
+        </h4>
+    </footer>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
